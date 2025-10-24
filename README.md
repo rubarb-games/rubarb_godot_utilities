@@ -9,7 +9,7 @@ Tween helper is a tweening system closer to the Unity asset DOTween in its funct
 To use this, add the script as a global for easy access
 ![Global script setup](https://i.postimg.cc/HjDyD4bm/global-setup.png)
 
-TweenHelper.start_tween(object_to_tween:Node, property:String, end_value:Variant, time:float, animation_curve:Curve = null, animation_mode:TweenHelper.Mode = TweenHelper.Mode.NORMAL)
+```TweenHelper.start_tween(object_to_tween:Node, property:String, end_value:Variant, time:float, animation_curve:Curve = null, animation_mode:TweenHelper.Mode = TweenHelper.Mode.NORMAL)```
 
 In it's most basic form it works like this. Animating a colorRect to move in its x axis across the screen.
 (animated gif below. Script will not loop)
@@ -37,7 +37,7 @@ You can also use set_start_snap(active:bool) to snap to the beginning of a tween
 The another() method lets you chain several tweens together to be played in succession, as an alternative to awaits :)
 ![another method](https://github.com/rubarb-games/rubarb_godot_utilities/blob/main/examples/Tweenhelper_anotherTween.gif)
 
-start_tween_callable(start_value:Variant, end_value:Variant, callable_func:Callable, time:float, animation_curve:Curve)
+```start_tween_callable(start_value:Variant, end_value:Variant, callable_func:Callable, time:float, animation_curve:Curve)```
 
 This method works similarly, but only outputs a value to be sent to a callable you supply
 ![callable](https://i.postimg.cc/K4SMSrtj/tween-Helper-callable.gif)
